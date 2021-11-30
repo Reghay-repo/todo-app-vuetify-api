@@ -24,6 +24,7 @@ class ProjectsController extends Controller
     public function get_projects () {
         $projects = Project::all();
 
+        //return resp
         return response()->json(['success' => true, 'projects' => $projects]);
     }
 
